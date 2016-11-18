@@ -25,4 +25,33 @@
 \end{split}
 \end{equation}
 
+%subplots
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{*}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{*}
+    \end{subfigure}
+    \caption{caption 1}
+    \label{fig:*}
+\end{figure}
+
+%tables
+\begin{table}[h]
+    \centering
+    \caption{Title here}
+    \label{tab:*}
+    \begin{tabular}{r|ccccc}
+           &        \multicolumn{5}{c}{Delay in samples}       \\
+    Noise level $\sigma$ & -30    & -10    & 0      & 10     & 30     \\ \hline
+    0      & 0.5018 & 0.5019 & 0.0309 & 0.4975 & 0.5025 \\
+    0.05   & 0.4977 & 0.4977 & 0.1621 & 0.4956 & 0.4990 \\
+    0.1    & 0.4998 & 0.5031 & 0.2944 & 0.4973 & 0.4974
+    \end{tabular}
+\end{table}
+
+
 \end{document}
